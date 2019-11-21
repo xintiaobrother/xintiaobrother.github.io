@@ -3,5 +3,5 @@ services:
   - docker
 script:
   - echo docker login -u "$DOCKER_USERNAME" -password "$DOCKER_PASSWORD"
-  - docker image build -t xintiaobrother/xintiaobrother.github.io:latest .
-  - docker push xintiaobrother/xintiaobrother.github.io:latest
+  - docker image build -t lcwice/xintiaobrother.github.io:latest .
+  - docker push lcwice/xintiaobrother.github.io:latest
