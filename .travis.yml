@@ -4,5 +4,5 @@ services:
 script:
   - echo docker login -u "$DOCKER_USERNAME" -password "$DOCKER_PASSWORD"
   - docker build -t xintiaobrother/xintiaobrother.github.io:latest .
-  - docker tag xintiaobrother/xintiaobrother.github.io:latest lcwice/xintiaobrother/xintiaobrother.github.io:latest .
+  - docker tag xintiaobrother/xintiaobrother.github.io:latest lcwice/xintiaobrother/xintiaobrother.github.io:latest
   - docker push lcwice/xintiaobrother/xintiaobrother.github.io:latest
