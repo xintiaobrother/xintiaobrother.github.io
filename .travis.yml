@@ -4,5 +4,5 @@ services:
 script:
   - echo docker login -u "$DOCKER_USERNAME" -password "$DOCKER_PASSWORD"
   - docker image build ./ -t ice-blogs:latest
-  - docker tag ice-blogs lcwice/ice-blogs:latest
+  - docker tag ice-blogs:latest lcwice/ice-blogs:latest
   - docker push lcwice/ice-blogs:latest
