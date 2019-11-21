@@ -2,6 +2,6 @@
 services:
   - docker
 script:
-  - echo docker login -u "$DOCKER_USERNAME" --password "$DOCKER_PASSWORD"
+  - echo docker login -u "$DOCKER_USERNAME" -passwd "$DOCKER_PASSWORD"
   - docker image build -t xintiaobrother/xintiaobrother.github.io:latest .
   - docker push xintiaobrother/xintiaobrother.github.io:latest
