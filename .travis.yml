@@ -3,5 +3,6 @@ services:
   - docker
 script:
   - echo docker login -u "$DOCKER_USERNAME" -password "$DOCKER_PASSWORD"
-  - docker image build ./ -t xintiaobrother-blogs:1.0.0
-  - docker push xintiaobrother-blogs:latest
+  - docker image build ./ -t ice-blogs:latest
+  - docker tag ice-blogs lcwice/ice-blogs:lastest
+  - docker push lcwice/ice-blogs:latest
