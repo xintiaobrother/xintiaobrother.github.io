@@ -5,6 +5,6 @@ script:
   -  echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker build -t xintiaobrother/xintiaobrother-blogs .
   - docker images
-  - docker tag xintiaobrother/xintiaobrother-blogs lcwice/xintiaobrother/xintiaobrother-blogs:latest
+  - docker tag xintiaobrother/xintiaobrother-blogs $DOCKER_USERNAME/xintiaobrother/xintiaobrother-blogs:latest
   - docker images
-  - docker push lcwice/xintiaobrother/xintiaobrother-blogs:latest
+  - docker push $DOCKER_USERNAME/xintiaobrother/xintiaobrother-blogs:latest
