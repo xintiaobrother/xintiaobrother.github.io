@@ -4,6 +4,6 @@ services:
 script:
   -  echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker build -t xintiaobrother/xintiaobrother-blogs .
-  - docker images ls
+  - docker images
   - docker tag xintiaobrother/xintiaobrother-blogs lcwice/xintiaobrother/xintiaobrother-blogs:latest
   - docker push hub.docker.com/lcwice/xintiaobrother/xintiaobrother-blogs:latest
