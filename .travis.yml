@@ -1,7 +1,12 @@
-services:
-  - nodejs
-script:
-  npm i
+
+language: node_js
+node_js:
+  - "8"
+branches:
+  only:
+    - master
+before_install:
+  - npm install
 services:
   - docker
 script:
