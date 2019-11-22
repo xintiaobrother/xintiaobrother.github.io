@@ -6,5 +6,5 @@ script:
   - docker build -t xintiaobrother/xintiaobrother-blogs .
   - docker images
   - docker tag xintiaobrother/xintiaobrother-blogs lcwice/xintiaobrother/xintiaobrother-blogs:latest
-   - docker images
+  - docker images
   - docker push lcwice/xintiaobrother/xintiaobrother-blogs:latest
