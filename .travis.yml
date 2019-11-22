@@ -1,4 +1,7 @@
-
+services:
+  - nodejs
+script:
+  npm i
 services:
   - docker
 script:
