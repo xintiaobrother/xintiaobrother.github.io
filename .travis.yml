@@ -3,6 +3,6 @@ services:
   - docker
 script:
   - - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - docker build -t xintiaobrother/xintiaobrother.github.io:latest .
-  - docker tag xintiaobrother/xintiaobrother.github.io:latest lcwice/xintiaobrother/xintiaobrother-blogs:latest
+  - docker build -t xintiaobrother/xintiaobrother-blogs.
+  - docker tag xintiaobrother/xintiaobrother-blogs lcwice/xintiaobrother/xintiaobrother-blogs:latest
   - docker push lcwice/xintiaobrother/xintiaobrother-blogs:latest
