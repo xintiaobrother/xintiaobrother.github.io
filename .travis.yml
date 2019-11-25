@@ -12,6 +12,7 @@ before_install:
 
 script:
   - npm run build
+  - git -v
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker build -t xintiaobrother-blogs .
   - docker images
