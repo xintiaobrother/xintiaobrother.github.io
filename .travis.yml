@@ -13,10 +13,11 @@ before_install:
 script:
   - npm run build
   - git --version
+  - git branch
+  - git checkout master
   - git add .
   - git commit -m "我测试一下"
   - git branch
-  - ls -a
   - git push origin master
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker build -t xintiaobrother-blogs .
