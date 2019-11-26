@@ -19,6 +19,8 @@ script:
   - git commit -m "我测试一下"
   - git branch
   - git push origin master
+  - cd ~/.ssh
+  - ls -a
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker build -t xintiaobrother-blogs .
   - docker images
